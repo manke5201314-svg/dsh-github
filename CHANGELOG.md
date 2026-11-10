@@ -3,6 +3,13 @@
 本项目的所有重要变更都记录在这里，格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.1.1] - 2026-11-10
+
+### 变更
+
+- 插件介绍改为中文：`package.json` 的 `description` 会显示在 npm 与 GitHub 仓库页。
+- README 的「License」小节改为「许可证」。
+
 ## [0.1.0] - 2026-11-10
 
 ### 新增
@@ -24,4 +31,5 @@
 - 未配置令牌时状态条显示「未连接」。
 - 大仓库操作耗时受手机网络影响。
 
+[0.1.1]: https://github.com/manke5201314-svg/dsh-github/releases/tag/v0.1.1
 [0.1.0]: https://github.com/manke5201314-svg/dsh-github/releases/tag/v0.1.0

@@ -46,6 +46,6 @@ dsh plugin --profile web add ./dsh-github
 
 见 [CHANGELOG.md](CHANGELOG.md)。
 
-## License
+## 许可证
 
 MIT

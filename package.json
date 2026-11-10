@@ -1,10 +1,10 @@
 {
   "name": "dsh-go-github",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "type": "module",
   "main": "lib/index.js",
-  "description": "dsh-go native plugin: create a GitHub repo from the composer, push the current project, and fork+clone anyone's project in one tap — with a repo panel and connection status.",
+  "description": "dsh-go 手机 App 原生插件：在输入框里一键建 GitHub 仓库、推送当前项目、fork 并克隆别人的项目，带仓库面板和连接状态。",
   "license": "MIT",
   "dsh": {
     "bundle": {
