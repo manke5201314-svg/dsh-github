@@ -20,12 +20,6 @@ git clone https://github.com/manke5201314-svg/dsh-github.git
 dsh plugin --profile web add ./dsh-github
 ```
 
-Or install from npm:
-
-```sh
-dsh plugin --profile web add dsh-go-github
-```
-
 Then restart the engine once from the app's Engine screen (or reopen the app).
 
 ## Getting started
