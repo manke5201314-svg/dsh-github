@@ -1,0 +1,119 @@
+{
+  "name": "dsh-github",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "description": "dsh-go native plugin: create a GitHub repo from the composer, push the current project, and fork+clone anyone's project in one tap — with a repo panel and connection status.",
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dshGo": {
+    "v": 1,
+    "title": {
+      "zh": "GitHub 仓库",
+      "en": "GitHub repos"
+    },
+    "icon": "fork",
+    "wants": [
+      "draft",
+      "clipboard"
+    ],
+    "contributes": {
+      "composer.actions": [
+        {
+          "id": "ghCreate",
+          "label": {
+            "zh": "建仓",
+            "en": "New repo"
+          },
+          "icon": "add"
+        },
+        {
+          "id": "ghPush",
+          "label": {
+            "zh": "推代码",
+            "en": "Push"
+          },
+          "icon": "cloud"
+        }
+      ],
+      "composer.tools": [
+        {
+          "id": "ghAdd",
+          "label": {
+            "zh": "加项目",
+            "en": "Add repo"
+          },
+          "icon": "download"
+        },
+        {
+          "id": "ghSetup",
+          "label": {
+            "zh": "设置",
+            "en": "Setup"
+          },
+          "icon": "settings"
+        }
+      ],
+      "composer.strip": [
+        {
+          "id": "status",
+          "icon": "fork",
+          "text": {
+            "zh": "GitHub · 未连接",
+            "en": "GitHub · offline"
+          },
+          "panel": "github"
+        }
+      ],
+      "panels": [
+        {
+          "id": "github",
+          "title": {
+            "zh": "GitHub 仓库",
+            "en": "GitHub repos"
+          },
+          "icon": "fork",
+          "placement": [
+            "session.tab",
+            "features",
+            "chat.panel"
+          ]
+        }
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-go",
+    "github",
+    "git",
+    "android"
+  ],
+  "author": "manke5201314-svg",
+  "homepage": "https://github.com/manke5201314-svg/dsh-github",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manke5201314-svg/dsh-github.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manke5201314-svg/dsh-github/issues"
+  },
+  "files": [
+    "lib/",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}
