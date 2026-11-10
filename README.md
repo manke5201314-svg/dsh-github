@@ -20,6 +20,12 @@ git clone https://github.com/manke5201314-svg/dsh-github.git
 dsh plugin --profile web add ./dsh-github
 ```
 
+也可以从 npm 安装：
+
+```sh
+dsh plugin --profile web add dsh-go-github
+```
+
 然后在 App 的「引擎」页重启一次引擎（或重开 App）。
 
 ## 开始使用
