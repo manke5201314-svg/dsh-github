@@ -30,7 +30,7 @@ Local working copies default to `/sdcard/DeepSeek/github` and can be changed in 
 
 ## Privacy and security
 
-- The GitHub token lives only in the plugin's local `data/config.json` (mode 600). It never appears in views, toasts, or logs, and is never sent anywhere except `api.github.com`.
+- The GitHub token lives only in `$DSH_HOME/dsh-go/plugin-data/dsh-go-github/config.json` (mode 600, survives plugin upgrades). It never appears in views, toasts, or logs, and is never sent anywhere except `api.github.com`.
 - Network requests go only to `api.github.com`; git operations use the local `git`.
 - The composer/clipboard is read only when you tap a button (repo name and repo URL), never conversation content.
 
