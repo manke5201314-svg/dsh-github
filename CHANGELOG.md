@@ -3,6 +3,13 @@
 本项目的所有重要变更都记录在这里，格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.1.4] - 2026-11-15
+
+### 修复
+
+- 配置与令牌改存到 `$DSH_HOME/dsh-go/plugin-data/dsh-go-github/config.json`。此前存在插件包内的 `data/`，`dsh plugin remove` 升级会把它一起删掉，令牌跟着丢。
+- 首次读到旧路径配置时自动迁移过来。
+
 ## [0.1.3] - 2026-11-15
 
 ### 变更

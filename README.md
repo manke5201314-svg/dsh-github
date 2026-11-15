@@ -32,7 +32,7 @@ dsh plugin --profile web add ./dsh-github
 
 ## 隐私与安全
 
-- GitHub 令牌只保存在本机插件目录的 `data/config.json`（权限 600），**不会出现在视图、提示或日志里**，也不会上传到任何第三方。
+- GitHub 令牌只保存在 `$DSH_HOME/dsh-go/plugin-data/dsh-go-github/config.json`（权限 600，升级插件不会丢），**不会出现在视图、提示或日志里**，也不会上传到任何第三方。
 - 网络请求只发往 `api.github.com`；git 操作走本机 `git`。
 - 只在你点按钮时读输入框 / 剪贴板内容（用于建仓名和仓库地址），不读对话内容。
 
