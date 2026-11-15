@@ -1,6 +1,6 @@
 {
   "name": "dsh-go-github",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "type": "module",
   "main": "lib/index.js",
@@ -26,24 +26,6 @@
       "clipboard"
     ],
     "contributes": {
-      "composer.actions": [
-        {
-          "id": "ghCreate",
-          "label": {
-            "zh": "建仓",
-            "en": "New repo"
-          },
-          "icon": "add"
-        },
-        {
-          "id": "ghPush",
-          "label": {
-            "zh": "推代码",
-            "en": "Push"
-          },
-          "icon": "cloud"
-        }
-      ],
       "composer.tools": [
         {
           "id": "ghAdd",
@@ -60,17 +42,6 @@
             "en": "Setup"
           },
           "icon": "settings"
-        }
-      ],
-      "composer.strip": [
-        {
-          "id": "status",
-          "icon": "fork",
-          "text": {
-            "zh": "GitHub · 未连接",
-            "en": "GitHub · offline"
-          },
-          "panel": "github"
         }
       ],
       "panels": [
