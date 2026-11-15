@@ -1,15 +1,13 @@
 # DSH GitHub (dsh-github)
 
-A native plugin for the [dsh-go](https://github.com/ccch1mneyyy/dsh-Go) phone app: **handle GitHub right from the composer** — create repos, push code, and fork + clone anyone's project without leaving the conversation.
+A native plugin for the [dsh-go](https://github.com/ccch1mneyyy/dsh-Go) phone app: **handle GitHub from your phone** — create repos, push code, and fork + clone anyone's project. One entry: All features → Plugins → GitHub repos.
 
 ## What it does
 
 | Where | What |
 |---|---|
-| Above the composer | Connection status: "GitHub · offline" or "GitHub · @login"; tap to open the repo panel |
-| Composer chips | **New repo**: create a GitHub repo from the text in the composer (private by default), clone it locally, set it current; **Push**: commit and push the current repo |
 | Plus-panel tools | **Add repo**: fork (optional) + clone any public project; **Setup**: paste a GitHub token to connect |
-| Repo panel | Account, current repo, my repos (tap to switch or clone), local working copies, pull, refresh |
+| Repo panel | Account, new repo, add repo (fork + clone), current repo, my repos (tap to switch or clone), local working copies, sync, push, refresh |
 
 ## Install
 
