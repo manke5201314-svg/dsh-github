@@ -11,7 +11,7 @@ A native plugin for the [dsh-go](https://github.com/ccch1mneyyy/dsh-Go) phone ap
 
 ## Install
 
-Requires the dsh-go phone app (local engine), dsh ≥ 0.2.1-rc.2, and `git` on the device.
+Requires the dsh-go phone app (local engine) and dsh ≥ 0.2.1-rc.2. **No local `git` needed**: pull, push and clone all go through the Git Data API on `api.github.com`.
 
 ```sh
 git clone https://github.com/manke5201314-svg/dsh-github.git

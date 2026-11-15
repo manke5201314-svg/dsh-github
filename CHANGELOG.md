@@ -3,6 +3,15 @@
 本项目的所有重要变更都记录在这里，格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.1.3] - 2026-11-15
+
+### 变更
+
+- 推送、同步、克隆全部改走 GitHub Git Data API（`lib/remote.js`），不再依赖本机 `git`：手机网络里 `github.com:443` 常被掐断，`api.github.com` 可用。
+- 推送按内容比对：本地算 git blob sha，只上传变化文件，删除的文件按 `sha: null` 进入 tree。
+- 本地仓库用 `.dsh-github.json` 标记（旧的 `.git` 目录仍被识别）。
+- 删除 `lib/git.js`。
+
 ## [0.1.2] - 2026-11-15
 
 ### 变更

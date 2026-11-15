@@ -9,9 +9,11 @@
 | 加号面板 | **加项目**：fork（可选）+ 克隆任意公开项目；**设置**：粘贴 GitHub 令牌完成连接 |
 | 仓库面板 | 账号、建仓、一键添加（fork + 克隆）、当前仓库、我的仓库列表（点一下切换或克隆）、本地工作副本、同步、推送、刷新 |
 
+推送只上传有变化的文件：本地按 git blob 规则算附件哈希，和远端 tree 比对后建 blob / tree / commit，再快进分支。所以手机网络里 `github.com:443` 不通也能推。
+
 ## 安装
 
-要求：dsh-go 手机 App（本机引擎），dsh ≥ 0.2.1-rc.2，本机有 `git`。
+要求：dsh-go 手机 App（本机引擎），dsh ≥ 0.2.1-rc.2。**不需要本机 git**：拉取、推送、克隆全部走 `api.github.com` 的 Git Data API。
 
 ```sh
 git clone https://github.com/manke5201314-svg/dsh-github.git
